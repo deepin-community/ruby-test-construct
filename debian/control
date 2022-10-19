@@ -1,0 +1,33 @@
+Source: ruby-test-construct
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Team <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Alexander GQ Gerasiov <gq@debian.org>
+Build-Depends: debhelper-compat (= 12),
+               gem2deb,
+               ruby-minitest,
+               ruby-mocha
+Standards-Version: 4.5.1
+Vcs-Git: https://salsa.debian.org/ruby-team/ruby-test-construct.git
+Vcs-Browser: https://salsa.debian.org/ruby-team/ruby-test-construct
+Homepage: https://github.com/bhb/test_construct
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+
+Package: ruby-test-construct
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ruby | ruby-interpreter,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: Ruby library that creates temporary files and directories for testing
+ TestConstruct is a DSL for creating temporary files and directories during
+ testing.
+ .
+ Using construct is as simple as calling within_construct and providing a
+ block. All files and directories that are created within that block are
+ created within a temporary directory. The temporary directory is always
+ deleted before within_construct finishes.
+ .
+ There is nothing special about the files and directories created with
+ TestConstruct, so you can use plain old Ruby IO methods to interact with them.

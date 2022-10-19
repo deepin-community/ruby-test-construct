@@ -1,0 +1,44 @@
+ruby-test-construct (2.0.2-1) unstable; urgency=medium
+
+  [ Cédric Boutillier ]
+  * Bump debhelper compatibility level to 9
+  * Use https:// in Vcs-* fields
+  * Bump Standards-Version to 3.9.7 (no changes needed)
+  * Run wrap-and-sort on packaging files
+
+  [ Utkarsh Gupta ]
+  * Add salsa-ci.yml
+
+  [ Debian Janitor ]
+  * Use secure copyright file specification URI.
+  * Use secure URI in debian/watch.
+  * Bump debhelper from old 9 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update Vcs-* headers from URL redirect.
+  * Use canonical URL in Vcs-Git.
+
+  [ Cédric Boutillier ]
+  * [ci skip] Update team name
+  * [ci skip] Add .gitattributes to keep unwanted files out of the source
+    package
+
+  [ Alexander Gerasiov ]
+  * d/control: Bump Standards-Version (no changes needed.)
+  * New upstream version 2.0.2
+  * d/watch: Use gemwatch.debian.net instead of alioth.
+
+ -- Alexander GQ Gerasiov <gq@debian.org>  Tue, 05 Jan 2021 18:49:49 +0300
+
+ruby-test-construct (2.0.1-1) unstable; urgency=medium
+
+  * New upstream version 2.0.1
+
+ -- Alexander GQ Gerasiov <gq@debian.org>  Mon, 16 Mar 2015 00:17:11 +0300
+
+ruby-test-construct (2.0.0-1) unstable; urgency=medium
+
+  * Initial release (Closes: #778764)
+
+ -- Alexander GQ Gerasiov <gq@debian.org>  Thu, 19 Feb 2015 16:16:01 +0300

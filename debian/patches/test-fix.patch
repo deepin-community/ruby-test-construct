@@ -1,0 +1,13 @@
+Description: Fix require issue in test.
+Author: Alexander Gerasiov <gq@debian.org>
+Last-Update: 2015-02-19
+Index: ruby-test-construct-2.0.0/test/test_construct_test.rb
+===================================================================
+--- ruby-test-construct-2.0.0.orig/test/test_construct_test.rb	2015-02-19 01:31:27.000000000 +0300
++++ ruby-test-construct-2.0.0/test/test_construct_test.rb	2015-02-19 01:33:29.782286977 +0300
+@@ -1,4 +1,4 @@
+-require 'test_helper'
++require (File.dirname(File.realdirpath(__FILE__)) + '/test_helper.rb')
+ 
+ class TestConstructTest < Minitest::Test
+   include TestConstruct::Helpers
